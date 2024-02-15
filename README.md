@@ -1,4 +1,4 @@
-# BerryMarker
+# BerryMarker 🌺
 
 BerryMarker is a web application designed to help users map and track various types of berry plants. It allows users to mark the locations of different berry plants on a map, providing information such as plant name, harvest period, and user details. The application aims to assist berry enthusiasts, farmers, and researchers in identifying, locating, and managing berry plants efficiently.
 
