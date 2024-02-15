@@ -1,0 +1,12 @@
+{
+    "autoload": {
+      "psr-4": {
+        "Business\\": "Business/",
+        "Data\\": "Data/",
+        "Entities\\": "Entities/",
+        "Exceptions\\": "Exceptions/",
+        "Presentation\\": "Presentation/"
+      }
+    }
+  }
+  

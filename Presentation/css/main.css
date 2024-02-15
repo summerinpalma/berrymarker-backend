@@ -1,0 +1,192 @@
+/* BASIC STYLING */ 
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background: ghostwhite;
+}
+
+/* MAPBOX STYLE */ 
+.map-container {
+    margin-left:8px;
+    background-color:aliceblue;
+    width:80%;
+    height:500px;
+    border-radius:20px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#CCE7FF;
+    text-align:center;
+}
+
+.mapboxgl-canvas {
+    cursor: url('../assets/images/map-cursor-48.png'), auto !important;
+}
+
+/* TABLE STYLE */ 
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.delete-icon-link svg, .update-icon-link svg {
+    stroke:#324960;
+    transition: stroke 0.3s ease;
+}
+
+.delete-icon-link:hover svg {
+    stroke:lightcoral;
+}
+
+.update-icon-link:hover svg {
+    stroke:#4FC3A1;
+}
+
+.delete-icon-link, .update-icon-link {
+    display:inline-block;
+    text-align:center;
+    border:none;
+    text-decoration:none;
+    padding: 0;
+    margin:0;
+    line-height:0;
+}
+
+.flex-container {
+   display:flex;
+   justify-content:center;
+   align-content:center;
+}
+
+tr:first-child {
+    border-radius: 2em;
+}
+/* Responsive */
+
+@media (max-width: 767px) {
+    .table-wrapper {
+        margin: 0px;
+    }
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+
+    .fl-table tbody td:last-child {
+            padding:0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+    }
+
+    /* CUSTOM MARKER */ 
+
+    .custom-marker {
+        width: 30px; /* Set the width of the marker */
+        height: 30px; /* Set the height of the marker */
+        background-size: cover; /* Ensure the background image covers the marker */
+        cursor: pointer; /* Change the cursor to a pointer when hovering over the marker */
+    }
